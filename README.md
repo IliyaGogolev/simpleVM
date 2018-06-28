@@ -5,7 +5,7 @@ SIMPLE VM
 Input Files "Hello.out", "PNZ.out", and "Primes.out" all contain compiled programs written in a simple bytecode or "intcode". Virtual machine loads up a specified file and executes the bytecode. Each bytecode file has the following format. "Int32" values are in high-low byte order, so the number 1 is written as the bytes 00 00 00 01.
 
 # .OUT FILE FORMAT
-Int32  code_count              # number of 32-bit integers that follow
+Int32  code_count               # number of 32-bit integers that follow
 Int32  code[ code_count ]      # 'code_count' number of 32-bit integers representing opcodes and operands
 Int32  string_count            # number of strings that follow
 String strings[ string_count ] # Set of strings. The format of a string is described next.
